@@ -1,0 +1,14 @@
+{
+  "schema": "hub.json (draft, no vault fields until the vault exists)",
+  "name": "AgentiCCells sites",
+  "what_it_does": "The home of the sites that AgentiCCells cells build, on subdomains of agenticcells.site while they get their own domain. First version.",
+  "owner": "AgentiCCells",
+  "team": "AgentiCCells team of agents, instructed by Dinis Cruz",
+  "live_address": "https://agenticcells.site",
+  "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Website",
+  "licence": {
+    "code": "Apache-2.0",
+    "text": "CC BY 4.0"
+  },
+  "version_from": "https://agenticcells.site/version.json"
+}

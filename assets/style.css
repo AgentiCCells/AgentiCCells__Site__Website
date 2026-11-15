@@ -1,0 +1,111 @@
+/* agenticcells.site styles (from the main site). Visual identity (D1) by designer@agenticcells.dinis, 2026-11-15.
+   Choices and contrast measurements: map/design.md. System fonts only: nothing is loaded from another host. */
+
+/* Palette. Every text colour is at least 4.5:1 on --bg and --surface (measured, map/design.md). */
+:root{
+  color-scheme:light dark;
+  --bg:#ffffff;--surface:#f4f6f6;--fg:#16191d;--muted:#4f5861;--accent:#0a5c6b;--on-accent:#ffffff;--line:#d5dbdf;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  /* Type scale: ratio 1.25 from a 1rem body. */
+  --step-0:1rem;--step-1:1.25rem;--step-2:1.5625rem;--step-3:1.953rem;--step-4:2.441rem;
+  --measure:42rem;--radius:.375rem;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#111518;--surface:#1a2025;--fg:#e7eaed;--muted:#a7b0b8;--accent:#6ec6d6;--on-accent:#111518;--line:#2e373e;
+}}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:var(--step-0)/1.6 var(--font)}
+@media (min-width:48rem){body{font-size:1.0625rem}}
+main,header,footer{max-width:var(--measure);margin:0 auto;padding:1rem}
+main{padding-top:1.5rem;padding-bottom:2.5rem}
+
+a{color:var(--accent);text-underline-offset:.15em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:2px}
+
+h1,h2,h3,h4{line-height:1.2;font-weight:700;letter-spacing:-.01em;margin:2rem 0 .75rem}
+h1{font-size:clamp(var(--step-3),6vw,var(--step-4));margin-top:.5rem;letter-spacing:-.02em}
+h2{font-size:var(--step-2)}
+h3{font-size:var(--step-1)}
+h4{font-size:var(--step-0)}
+p,ul,ol{margin:0 0 1rem}
+
+table{border-collapse:collapse;width:100%}
+th,td{border-bottom:1px solid var(--line);padding:.5rem;text-align:left;vertical-align:top}
+th{font-size:.875rem;color:var(--muted);font-weight:600}
+.table-wrap{overflow-x:auto}
+code,pre{font-family:var(--mono);font-size:.9em;overflow-wrap:anywhere;white-space:pre-wrap}
+code{background:var(--surface);padding:.05em .3em;border-radius:.25rem}
+img{max-width:100%;height:auto}
+
+/* Header and the text mark. A plain wordmark: no special styling of the letters
+   until the Creative Commons trademark question (researcher@ S4, designer@ D7) is answered. */
+header{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:baseline;border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:.45rem;font-weight:700;font-size:var(--step-1);letter-spacing:-.01em;color:var(--fg);text-decoration:none}
+.brand::before{content:"";width:.8em;height:.8em;border:.17em solid var(--accent);border-radius:.22em;flex:none}
+nav{flex:1 1 100%}
+nav ul{list-style:none;margin:0 -.5rem;padding:0;display:flex;flex-wrap:wrap;gap:0 .25rem}
+nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 .5rem;text-decoration:none;border-bottom:3px solid transparent}
+nav a:hover{border-bottom-color:var(--line)}
+nav a[aria-current="page"]{color:var(--fg);font-weight:600;border-bottom-color:var(--accent)}
+@media (max-width:30rem){nav ul{gap:0}nav a{font-size:.9375rem;padding:0 .4rem}}
+
+footer{color:var(--muted);font-size:.875rem;border-top:1px solid var(--line);padding-top:1.25rem;padding-bottom:2rem}
+footer p{margin:0 0 .35rem}
+footer .version{font-family:var(--mono);font-size:.8125rem}
+small{color:var(--muted)}
+
+/* D2 · Home page layout (designer@, 2026-11-15). */
+/* First screen: what we do, and one call to action. */
+.hero{padding:1.5rem 0 2rem;border-bottom:1px solid var(--line);margin-bottom:.5rem}
+.hero h1{margin-bottom:1rem}
+.hero p{font-size:var(--step-1);line-height:1.5;color:var(--fg)}
+.hero p a{font-size:.8em}
+.cta{margin:1.5rem 0 0}
+.button{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:600;font-size:var(--step-0);
+  padding:.7rem 1.15rem;border-radius:var(--radius);text-decoration:none;overflow-wrap:anywhere;max-width:100%}
+.button:hover{text-decoration:underline;text-decoration-thickness:1px}
+.hero .cta a.button{font-size:var(--step-0)}
+
+/* Lists of bold-led points (week one, the four properties): cards in a grid. */
+ul.points{list-style:none;padding:0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr))}
+ul.points li{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:.9rem 1rem;margin:0}
+ul.points li strong:first-child{display:block;color:var(--fg);margin-bottom:.2rem}
+
+/* The ladder: a table on wide screens, one card per cell on small ones. */
+@media (max-width:40rem){
+  .ladder table,.ladder tbody,.ladder tr,.ladder td{display:block;width:100%}
+  .ladder thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .ladder tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:.5rem .9rem;margin-bottom:.75rem}
+  .ladder td{border:0;padding:.3rem 0}
+  .ladder td::before{content:attr(data-label);display:block;font-size:.8125rem;font-weight:600;color:var(--muted)}
+  .ladder td:first-child{font-weight:700;font-size:var(--step-1)}
+  .ladder td:first-child::before{display:none}
+}
+
+/* Numbered steps (how to start): a numbered badge per step. */
+ol.steps{list-style:none;padding:0;counter-reset:step}
+ol.steps li{counter-increment:step;position:relative;padding-left:2.5rem;margin-bottom:.9rem;min-height:1.75rem}
+ol.steps li::before{content:counter(step);position:absolute;left:0;top:0;width:1.75rem;height:1.75rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);font-weight:700;font-size:.9rem;display:grid;place-items:center}
+
+/* /key/ prototype (dev@, V7). Uses the palette above; nothing new. */
+.note{background:var(--surface);border-left:4px solid var(--accent);padding:.75rem 1rem;border-radius:var(--radius)}
+button{font:inherit;padding:.5rem 1rem;border-radius:var(--radius);border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);cursor:pointer}
+button:hover{filter:brightness(1.1)}
+#key-public{width:100%;font-family:var(--mono);font-size:.85rem;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:var(--radius);padding:.5rem}
+.key-qr{max-width:20rem;margin:0 0 1rem}
+.key-qr svg{display:block;width:100%;height:auto}
+
+/* Seven-step diagram (D9) */
+.flow{margin:1rem 0;padding:.75rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.flow svg{display:block;width:100%;max-width:26rem;height:auto;margin:0 auto}
+.flow .d-line{stroke:var(--accent);stroke-width:2}
+.flow .d-dot{fill:var(--accent)}
+.flow .d-num{fill:var(--on-accent);font:700 14px var(--font)}
+.flow .d-txt{fill:var(--fg);font:600 16px var(--font)}
+.flow .d-who{fill:var(--muted);font:13px var(--font)}
+.flow figcaption{font-size:.875rem;color:var(--muted);margin-top:.5rem;text-align:center}
