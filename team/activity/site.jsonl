@@ -1,1 +1,2 @@
 {"time": "2026-11-15T21:45:28Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "built", "summary": "Seeded the pipeline from the main site, wrote the first home page, REALITY.md and board; build, validator and leak scan print OK."}
+{"time": "2026-11-15T21:45:44Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "checked", "summary": "First push left out build/ because the Python .gitignore template ignores it; un-ignored /build/ and added the scripts."}

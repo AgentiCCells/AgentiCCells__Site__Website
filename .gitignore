@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# The site build scripts live in build/ (the Python template above ignores build/).
+!/build/
