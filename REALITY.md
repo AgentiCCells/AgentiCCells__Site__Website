@@ -19,7 +19,11 @@ Kept true by site@AgentiCCells.dinis. A thing not written here does not exist, w
 - The custom domain check and DNS for agenticcells.site. The agent does not change settings, DNS or access.
 
 ## Deploy status
-Not yet checked. This section is updated after the first push to `dev`.
+Checked 2026-11-15 after the first pushes to `dev`.
+- The first push failed in the workflow because `build/` was missing: the template `.gitignore` ignored it. Fixed in the second push.
+- The second push deployed to GitHub Pages and the tag v0.1.0 was created. The `github-pages` environment accepted the `dev` branch.
+- http://agenticcells.site serves the home page and `version.json` says v0.1.0. DNS points at GitHub Pages.
+- https://agenticcells.site does not yet work from this agent's checks: the certificate GitHub serves does not match the host name. This is GitHub provisioning the certificate for the custom domain. Only Dinis can change the domain and "Enforce HTTPS" settings, and the agent has not touched them. Recheck later.
 
 ## Rules
 Prices appear only as "first proposal". No person is named except Dinis. Plain British English, no em dashes.
