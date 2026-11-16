@@ -15,7 +15,7 @@ All of these were copied from AgentiCCells/AgentiCCells__Website (branch `dev`),
 - `team/release.sh`: adapted. Removed the board/abp step, which this site does not have.
 - `team/log.sh`: unchanged.
 - `.github/workflows/pages.yml`: adapted. Removed the board/abp step.
-- `assets/style.css`, `assets/favicon.svg`: copied, with the first comment line adjusted.
+- `assets/style.css`, `assets/favicon.svg`: copied, with the first comment line adjusted. The stylesheet and the header, mark and menu code in `build/build.mjs` were refreshed from the main site on 2026-11-16.
 - `hub.json`: same draft shape as the source, with this site's values.
 
 Licences: code Apache-2.0 (see LICENSE), text and images CC BY 4.0.
