@@ -1,6 +1,6 @@
 # REALITY.md: what is true today
 
-Kept true by site@AgentiCCells.dinis. A thing not written here does not exist, whatever a brief says. Last updated 2026-11-16.
+Kept true by site@AgentiCCells.dinis. A thing not written here does not exist, whatever a brief says. Last updated 2026-11-16 (third change).
 
 ## What exists
 - This repository, AgentiCCells__Site__Website, with default branch `dev`. Dinis set its Pages source to GitHub Actions and its custom domain to agenticcells.site (source: the brief ACC-028).
@@ -8,6 +8,7 @@ Kept true by site@AgentiCCells.dinis. A thing not written here does not exist, w
 - The pipeline, copied from the main site's repository (see README.md): build, validator, leak scan, commit-trailer check, release script and Pages workflow. Every pushed commit must carry an `Agent:` trailer.
 - Header (2026-11-16): one-line header with the teal "C" mark and a script-free Menu, copied from the main site's current template and stylesheet. The only nav link is labelled "Home". The footer says this is a first version.
 - The home page says the hub at https://hub.agenticcells.site is live and lists one site today, the AgentiCCells website (checked 2026-11-16 by fetching it).
+- Home page (2026-11-16): heading reads "The sites that AgentiCCells cells build"; the "Where to look next" links have a tap area of at least 32px. No customer or other sites are listed: listing needs the owner's consent and Dinis has not given it. The page still says no customer sites are listed.
 - `hub.json`: this site's entry for the hub, in the same draft shape as the main site's. Whether the hub reads it is not known to this repository.
 
 ## What does not exist

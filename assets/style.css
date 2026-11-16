@@ -161,3 +161,7 @@ section+section{margin-top:3rem}
   .hero{grid-template-columns:1.15fr .85fr;padding:2rem 2rem 2.5rem;gap:2.5rem}
   .cell-fig{max-width:none}
 }
+
+/* Lists that start with a link (Where to look next): the link gets a tap area of at least 32px (reviewer@, 2026-11-16). */
+main li>a:first-child{display:inline-block;padding:.45rem 0}
+main li{margin-bottom:.15rem}

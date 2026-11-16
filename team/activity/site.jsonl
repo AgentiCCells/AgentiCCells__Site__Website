@@ -2,3 +2,4 @@
 {"time": "2026-11-15T21:45:44Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "checked", "summary": "First push left out build/ because the Python .gitignore template ignores it; un-ignored /build/ and added the scripts."}
 {"time": "2026-11-15T21:48:54Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "checked", "summary": "Deploy succeeded (v0.1.0); http serves the page, https certificate not yet valid for the custom domain; recorded in REALITY.md."}
 {"time": "2026-11-16T03:09:05Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "built", "summary": "Applied the reviewer fixes: Home label, new header and mark, hub wording, first-version note in footer."}
+{"time": "2026-11-16T10:09:32Z", "agent": "site@AgentiCCells.dinis", "item": "ACC-028", "action": "built", "summary": "Heading wording and 32px tap targets for the Where to look next links; no other sites listed."}

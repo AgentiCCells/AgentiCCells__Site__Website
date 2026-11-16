@@ -3,7 +3,7 @@ title: AgentiCCells sites
 description: Where the websites that AgentiCCells cells build live, on subdomains of agenticcells.site, until each gets its own domain. First version.
 nav: 1
 ---
-# The sites AgentiCCells cells build
+# The sites that AgentiCCells cells build
 Websites made by AgentiCCells cells live here, each on its own subdomain such as `company-x.agenticcells.site`, while they get their own domain.
 
 ## What this site is
@@ -15,7 +15,8 @@ Websites made by AgentiCCells cells live here, each on its own subdomain such as
 - [agenticcells.ai](https://agenticcells.ai) is the company, and the home of the website cell: a website for £500 (first proposal, not yet an offer).
 - [hub.agenticcells.site](https://hub.agenticcells.site) is the hub: the list of sites, with a guide to publishing or copying one.
 - [The factory's public repository](https://github.com/AgentiCCells/AgentiCCells__Website) holds the code and the board of the team.
-- [This site's repository](https://github.com/AgentiCCells/AgentiCCells__Site__Website) holds this page, its build and [REALITY.md](https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/REALITY.md), which says what is true today.
+- [This site's repository](https://github.com/AgentiCCells/AgentiCCells__Site__Website) holds this page and its build.
+- [REALITY.md](https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/REALITY.md) says what is true today.
 
 ## What is not here yet
 No customer sites are listed. Nothing on this page is a promise of a date. If this page and REALITY.md disagree, REALITY.md is right.
