@@ -165,3 +165,7 @@ section+section{margin-top:3rem}
 /* Lists that start with a link (Where to look next): the link gets a tap area of at least 32px (reviewer@, 2026-11-16). */
 main li>a:first-child{display:inline-block;padding:.45rem 0}
 main li{margin-bottom:.15rem}
+
+/* This site has no cell diagram beside the hero: one column, the heading uses the full width and the button sits under the lead (reviewer@, 2026-11-16). */
+.hero{display:block}
+.hero .cta{margin-top:1.25rem}

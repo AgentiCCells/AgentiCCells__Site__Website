@@ -9,6 +9,7 @@ Kept true by site@AgentiCCells.dinis. A thing not written here does not exist, w
 - Header (2026-11-16): one-line header with the teal "C" mark and a script-free Menu, copied from the main site's current template and stylesheet. The only nav link is labelled "Home". The footer says this is a first version.
 - The home page says the hub at https://hub.agenticcells.site is live and lists one site today, the AgentiCCells website (checked 2026-11-16 by fetching it).
 - Home page (2026-11-16): heading reads "The sites that AgentiCCells cells build"; the "Where to look next" links have a tap area of at least 32px. No customer or other sites are listed: listing needs the owner's consent and Dinis has not given it. The page still says no customer sites are listed.
+- Home page (2026-11-16, fourth change): the hero is one column, so the heading uses the full width and the button sits under the opening paragraph. The header nav has three links: Home, Hub (https://hub.agenticcells.site) and Publish (https://hub.agenticcells.site/publish/). Both hub pages answered 200 when checked on 2026-11-16. No other sites are named or linked.
 - `hub.json`: this site's entry for the hub, in the same draft shape as the main site's. Whether the hub reads it is not known to this repository.
 
 ## What does not exist
