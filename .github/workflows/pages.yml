@@ -36,6 +36,15 @@ jobs:
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
         run: node build/check-commits.mjs "$BEFORE" "$AFTER"
+      - name: Each role changed only its own paths (team/scopes.json)
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: node build/role-scope.mjs "$BEFORE" "$AFTER"
+      - name: Every Agent Behaviour Policy is well formed
+        run: node build/abp-check.mjs
+      - name: Stop while board/HOLD.md exists
+        run: test ! -e board/HOLD.md
       - run: node build/build.mjs
         env:
           SITE_VERSION: ${{ steps.version.outputs.version }}

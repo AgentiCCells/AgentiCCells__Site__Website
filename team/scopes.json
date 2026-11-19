@@ -1,0 +1,15 @@
+{
+  "about": "What each role of the agenticcells.site cell may change, as path globs (* within a folder, ** across folders). build/role-scope.mjs fails any commit whose Agent: trailer names a role here and touches a path outside that role's list. Kept by conductor.agenticcells-site@AgentiCCells.dinis; a change that widens a role needs Dinis Cruz's word, recorded in the commit.",
+  "team": "AgentiCCells.dinis",
+  "suffix": ".agenticcells-site",
+  "roles": {
+    "conductor": ["**"],
+    "designer": ["team/rounds/*/design/**"],
+    "writer": ["content/**", "data/**", "team/rounds/*/copy/**"],
+    "developer": ["build/build.mjs", "build/pages/**", "scripts/**", "assets/**", "team/rounds/*/build/**"],
+    "reviewer": ["team/rounds/*/review/**"]
+  },
+  "changes": [
+    "2026-11-19, conductor: first version, for the brief of 2026-11-17 (Dinis, about 23:00 UTC, through cells@AgentiCCells.dinis)."
+  ]
+}
