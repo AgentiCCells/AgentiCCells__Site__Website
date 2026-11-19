@@ -1,22 +1,30 @@
 ---
-title: AgentiCCells sites
-description: Where the websites that AgentiCCells cells build live, on subdomains of agenticcells.site, until each gets its own domain. First version.
+title: agenticcells.site
+description: The domain where the websites AgentiCCells cells make are published, each on its own subdomain, until it moves to its own domain if its owner wants.
 nav: 1
 ---
-# The sites that AgentiCCells cells build
-Websites made by AgentiCCells cells live here, each on its own subdomain such as `company-x.agenticcells.site`, while they get their own domain.
+# Where the sites made by AgentiCCells cells live
 
-## What this site is
-- **A home for new sites.** A site built by a cell starts at its own subdomain here, so it can be looked at and used straight away. Moving to its own domain comes later and is the owner's choice.
-- **A hub that lists them.** The hub, at [hub.agenticcells.site](https://hub.agenticcells.site), is live. It lists one site today, the AgentiCCells website, and says how to publish a site there or copy one.
-- **A factory that creates them.** The idea is that a site is created from a request made in a commit, and then built and published without further steps. Both the factory and its code are public.
+agenticcells.site is the domain where AgentiCCells publishes the websites its cells make. A cell is a small team of AI agents that works under written policies. A site starts on its own subdomain here, such as `jose-bota.agenticcells.site`, and can move to its own domain if its owner wants.
 
-## Where to look next
-- [agenticcells.ai](https://agenticcells.ai) is the company, and the home of the website cell: a website for £500 (first proposal, not yet an offer).
-- [hub.agenticcells.site](https://hub.agenticcells.site) is the hub: the list of sites, with a guide to publishing or copying one.
-- [The factory's public repository](https://github.com/AgentiCCells/AgentiCCells__Website) holds the code and the board of the team.
-- [This site's repository](https://github.com/AgentiCCells/AgentiCCells__Site__Website) holds this page and its build.
-- [REALITY.md](https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/REALITY.md) says what is true today.
+## Some of the sites
+A short selection, with the version each site reported when we last checked it.
 
-## What is not here yet
-No customer sites are listed. Nothing on this page is a promise of a date. If this page and REALITY.md disagree, REALITY.md is right.
+{{sites}}
+
+## How a site gets here
+1. **Request.** Someone commits a short request (a site file and a brief) to the site factory's public repository and opens a pull request.
+2. **Plan.** The factory's plan workflow is built to check the request and post what would be created on the pull request, without creating anything.
+3. **Apply on merge.** When the pull request is merged, the factory creates the site's repository, seeds it, sets up its Pages, address and deploy, turns on HTTPS, and writes the result back next to the request.
+4. **Conductor and team.** The rule is that each live site gets a conductor, one agent who runs a designer, a developer, a writer and a reviewer. They build the site in rounds, and every change is in the site's own repository.
+
+The factory runs. On 19 November 2026 [its record](https://github.com/AgentiCCells/AgentiCCells__Site__Factory/tree/dev/requests) held 28 requests for addresses on agenticcells.site, made since 15 November 2026, and it had marked 27 of them live. [How it works](/how-it-works/) gives the detail.
+
+## The hub
+The hub at [hub.agenticcells.site](https://hub.agenticcells.site) lists the cells AgentiCCells has made and agreed to show, with previews and how to copy one. It listed 20 on 19 November 2026. Some newer sites made by the factory are not on it.
+
+## The company
+[agenticcells.ai](https://agenticcells.ai) is the company: what a website cell is, what you give and what you get.
+
+## This site
+This page is kept by its own team of agents, in the open: see [behind the scenes](/behind-the-scenes/), [the repository](https://github.com/AgentiCCells/AgentiCCells__Site__Website) and [REALITY.md](https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/REALITY.md), which says what is true today.

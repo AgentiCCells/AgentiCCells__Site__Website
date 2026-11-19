@@ -1,0 +1,108 @@
+{
+  "_about": "A short, current selection of the sites AgentiCCells cells have made, for the home page of agenticcells.site. Who may be named comes from the hub registry at the commit below; each version was read from the site's own live /version.json at the time in 'checked'. The hub lists more of them, though not all. Written by writer.agenticcells-site@AgentiCCells.dinis on 2026-11-19 and revised the same day after the round 1 review; entries with role 'card' are the home page cards, the entry with role 'band' feeds the hub band; sources in team/rounds/1/copy/NOTES.md.",
+  "registry": {
+    "repository": "AgentiCCells/AgentiCCells__Website",
+    "path": "data/cells-registry.json",
+    "commit": "12afa0c",
+    "note": "The commit the hub builds from (2026-11-16 22:48 UTC). Its _decision (Dinis, 2026-11-16 ~18:10 UTC) says everything listed may be public; one client cell is left out of the file and is never named. The file on dev was not valid JSON when read on 2026-11-19, so this pinned copy is the source for names, and the live sites are the source for versions."
+  },
+  "checked": "2026-11-19T01:34:15Z",
+  "hub_count": {
+    "cells": 20,
+    "how": "distinct /cells/<id>/ links on https://hub.agenticcells.site",
+    "checked": "2026-11-19T01:34:22Z"
+  },
+  "sites": [
+    {
+      "id": "jose-bota",
+      "name": "José Bota, AI automation expert",
+      "what": "A portfolio for an AI automation expert, made by the site factory.",
+      "live": "https://jose-bota.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Jose-Bota",
+      "version": "v0.1.24",
+      "checked": "2026-11-19T01:34:13Z",
+      "consent": "agreed to be named (Dinis, relayed by cells@AgentiCCells.dinis on 2026-11-16 ~22:45 UTC); request 2026-11-16__jose-bota",
+      "kind": "site",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "yiheng-wang",
+      "name": "Yiheng Wang",
+      "what": "A personal site and presentation for a project and operations manager, made by the site factory.",
+      "live": "https://yiheng-wang.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Yiheng-Wang",
+      "version": "v0.1.22",
+      "checked": "2026-11-19T01:34:14Z",
+      "consent": "agreed to be named (Dinis, relayed by cells@AgentiCCells.dinis on 2026-11-16 ~22:45 UTC); request 2026-11-16__yiheng-wang",
+      "kind": "site",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "silvio-switha",
+      "name": "Silvio Switha: AI entrepreneur, musician and producer",
+      "what": "A portfolio for an AI entrepreneur, musician and producer, made by the site factory.",
+      "live": "https://silvio-switha.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Silvio-Switha",
+      "version": "v0.1.5",
+      "checked": "2026-11-19T01:34:13Z",
+      "consent": "agreed to be named (Dinis, relayed by cells@AgentiCCells.dinis on 2026-11-16 ~22:45 UTC); request 2026-11-16__silvio-switha",
+      "kind": "site",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "riskmandate-at-websummit",
+      "name": "RiskMandate at Web Summit Lisbon 2026",
+      "what": "An early site made by the site factory from a request file.",
+      "live": "https://riskmandate-at-websummit.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__RiskMandate-At-WebSummit",
+      "version": "v0.1.6",
+      "checked": "2026-11-19T01:34:12Z",
+      "consent": "listed in the hub registry",
+      "kind": "site",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "algarve-orange-grower",
+      "name": "Quinta do Sol Laranja (example site)",
+      "what": "A made-up orange grower, with a zone map and an order flow; the prices are invented and nothing is sent.",
+      "live": "https://algarve-orange-grower.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Algarve-Orange-Grower",
+      "version": "v0.1.4",
+      "checked": "2026-11-19T01:34:13Z",
+      "consent": "listed in the hub registry",
+      "kind": "site",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "specialist-writing",
+      "name": "Specialist: Writing",
+      "what": "A specialist agent for writing, one of six specialists with their own site.",
+      "live": "https://specialist-writing.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Specialist__Writing",
+      "version": "v0.1.13",
+      "checked": "2026-11-19T01:34:14Z",
+      "consent": "listed in the hub registry",
+      "kind": "specialist",
+      "status": "demo",
+      "role": "card"
+    },
+    {
+      "id": "hub",
+      "name": "AgentiCCells hub",
+      "what": "The hub: lists the cells AgentiCCells has made and agreed to show, with previews and how to copy one.",
+      "live": "https://hub.agenticcells.site",
+      "repository": "https://github.com/AgentiCCells/AgentiCCells__Site__Hub",
+      "version": "v0.1.17",
+      "checked": "2026-11-19T01:34:12Z",
+      "consent": "listed in the hub registry",
+      "kind": "site",
+      "status": "demo",
+      "role": "band"
+    }
+  ]
+}

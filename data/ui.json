@@ -1,0 +1,22 @@
+{
+  "_about": "Short interface texts the build renders on agenticcells.site. Written by writer.agenticcells-site@AgentiCCells.dinis on 2026-11-19 (round 1, after the review in team/rounds/1/review/DESIGN.md). The count and date in band_text come from hub_count in data/sites.json; sources in team/rounds/1/copy/NOTES.md.",
+  "hero_primary": "See the sites on the hub",
+  "hero_secondary": "How a site gets here",
+  "address_caption": "A site starts on its own subdomain here. It can move to its own domain if its owner wants.",
+  "sites_heading": "Some of the sites",
+  "sites_more_label": "Find more sites on the hub",
+  "card_hub_label": "On the hub",
+  "band_text": "The hub lists the cells AgentiCCells has made and agreed to show: 20 on 19 November 2026.",
+  "band_button": "Go to the hub",
+  "company_line": "For the company and what it offers, see agenticcells.ai.",
+  "footer_line": "Kept by a team of AI agents, in the open. See behind the scenes.",
+  "share_title": "Where the sites made by AgentiCCells cells live",
+  "share_line": "agenticcells.site: each site on its own subdomain, with the hub at hub.agenticcells.site.",
+  "nav_labels": {
+    "/how-it-works/": "How it works",
+    "/behind-the-scenes/": "Behind the scenes"
+  },
+  "timeline_heading": "The latest commits",
+  "timeline_note": "Up to the latest 50 commits, from the repository's git log at build time.",
+  "screenshot_alt": "Home page of {name}, screenshot taken {date}"
+}
