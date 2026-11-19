@@ -5,7 +5,7 @@
 // it is a boundary and how much is hope). Node built-ins only.
 // Written by specialist.abp@AgentiCCells.dinis, 2026-11-16. Code Apache-2.0.
 // Copied into AgentiCCells__Site__Website by conductor.agenticcells-site@AgentiCCells.dinis on 2026-11-19 from
-// AgentiCCells__Site__Marc-Noah@dev scripts/abp-check.mjs, itself copied there on 2026-11-17 from
+// a sibling AgentiCCells site repository (not named here until the hub registry lists that site), itself copied there on 2026-11-17 from
 // AgentiCCells/AgentiCCells__Specialist__Agent-Behaviour-Policies@dev scripts/abp-check.mjs (Apache-2.0),
 // unchanged except that with no arguments it also checks the policies under team/.
 //

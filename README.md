@@ -12,8 +12,8 @@ All of these were copied from AgentiCCells/AgentiCCells__Website (branch `dev`),
 - `build/validate.js`: adapted. The CNAME check and the own hosts are agenticcells.site and www.agenticcells.site. Removed the check of `data/cells.json`, which this site does not have. No remaining check was weakened.
 - `build/leak-scan.mjs`: unchanged.
 - `build/check-commits.mjs`: one change on 2026-11-19, the dotted-role pattern from AgentiCCells__Site__Template commit f7438ad (Dinis, 16 Nov 2026: "we definitely should allow dots because that's our terminology").
-- `build/abp-check.mjs`: copied on 2026-11-19 from AgentiCCells__Site__Marc-Noah (`scripts/abp-check.mjs`, Apache-2.0, written by specialist.abp@AgentiCCells.dinis); only the usage line changed.
-- `build/role-scope.mjs`: copied on 2026-11-19 from AgentiCCells__Site__Marc-Noah (`scripts/role-scope.mjs`, Apache-2.0, written by conductor.marc-noah@AgentiCCells.dinis); only the comments changed.
+- `build/abp-check.mjs`: copied on 2026-11-19 from a sibling AgentiCCells site repository (not named here until the hub registry lists that site), which took it from AgentiCCells__Specialist__Agent-Behaviour-Policies (`scripts/abp-check.mjs`, Apache-2.0, written by specialist.abp@AgentiCCells.dinis); only the usage line changed.
+- `build/role-scope.mjs`: copied on 2026-11-19 from a sibling AgentiCCells site repository (not named here until the hub registry lists that site) (`scripts/role-scope.mjs`, Apache-2.0, written by that site's conductor); only the comments changed.
 - `team/release.sh`: adapted. Removed the board/abp step, which this site does not have. On 2026-11-19 the HOLD check, abp-check, check-commits and role-scope were added.
 - `team/log.sh`: unchanged.
 - `.github/workflows/pages.yml`: adapted. Removed the board/abp step.

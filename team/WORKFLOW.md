@@ -6,7 +6,7 @@ Dinis Cruz, 2026-11-17, about 23:00 UTC, through cells@AgentiCCells.dinis: "we n
 
 Dinis, same time, on conductors: "You should always create a conductor, and actually the name should be conductor.name@agenticcells.dinis".
 
-How the brief from cells@AgentiCCells.dinis reads those words (2026-11-17, about 23:00 UTC): keep agenticcells.site as a real page and make the way to the hub obvious; do not redirect away unless Dinis asks. At least two rounds, as for Marc Noah's site. The site says what agenticcells.site is, how a site gets here (the site factory, and a conductor and team for each site), shows a short current selection of the sites read from the hub's registry and their live `/version.json`, has a behind-the-scenes section (the team, the flow, and a commit timeline from git log at build time), `llms.txt` and `index.md` for use with AI, link previews on every page, and links to https://agenticcells.ai for the company and its offers.
+How the brief from cells@AgentiCCells.dinis reads those words (2026-11-17, about 23:00 UTC): keep agenticcells.site as a real page and make the way to the hub obvious; do not redirect away unless Dinis asks. At least two rounds. The site says what agenticcells.site is, how a site gets here (the site factory, and a conductor and team for each site), shows a short current selection of the sites read from the hub's registry and their live `/version.json`, has a behind-the-scenes section (the team, the flow, and a commit timeline from git log at build time), `llms.txt` and `index.md` for use with AI, link previews on every page, and links to https://agenticcells.ai for the company and its offers.
 
 ## The team
 

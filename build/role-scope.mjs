@@ -4,7 +4,7 @@
 // A commit by an identity of this cell that is not in team/scopes.json fails.
 // Commits older than team/scopes.json are skipped (history is not rewritten).
 // Usage: node build/role-scope.mjs <before> <after>   Prints OK or each breach, exits 1 on any.
-// Written by conductor.marc-noah@AgentiCCells.dinis, 2026-11-17 (Apache-2.0), for AgentiCCells__Site__Marc-Noah;
+// Written 2026-11-17 (Apache-2.0) by the conductor of a sibling AgentiCCells site repository (not named here until the hub registry lists that site);
 // copied here unchanged in logic by conductor.agenticcells-site@AgentiCCells.dinis on 2026-11-19.
 import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
