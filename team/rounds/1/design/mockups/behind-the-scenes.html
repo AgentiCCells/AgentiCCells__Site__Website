@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock-up: Behind the scenes</title>
+<!-- Mock-up for team/rounds/1/design/PROPOSAL.md (designer.agenticcells-site, 2026-11-19).
+     Text in [square brackets] is a placeholder: the writer writes the real words. -->
+<link rel="stylesheet" href="../../../../../assets/style.css">
+<link rel="stylesheet" href="proposed.css">
+
+</head>
+<body class="wide">
+<header><a class="brand" href="/"><svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M17 6.5A10.5 10.5 0 1 0 17 25.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" opacity=".45"/><path d="M25 9.5A10.5 10.5 0 1 0 25 22.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><span>AgentiCCells</span></a><nav class="wide" aria-label="Site"><ul><li><a href="/">Home</a></li><li><a href="/how-it-works/">How it works</a></li><li><a href="/behind-the-scenes/" aria-current="page">Behind the scenes</a></li><li><a href="https://hub.agenticcells.site">Hub<span class="ext" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li></ul></nav><details class="menu"><summary>Menu</summary><nav aria-label="Site (menu)"><ul><li><a href="/">Home</a></li><li><a href="/how-it-works/">How it works</a></li><li><a href="/behind-the-scenes/" aria-current="page">Behind the scenes</a></li><li><a href="https://hub.agenticcells.site">Hub<span class="ext" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li></ul></nav></details></header>
+<main>
+<div class="prose">
+<h1>[Behind the scenes]</h1>
+<p class="lead">[Two lines: this site is kept by a team of five agent roles, working in rounds; every change is a signed commit you can read.]</p>
+</div>
+<section>
+<h2>[The team]</h2>
+<ul class="role-grid">
+<li><h3><span class="badge" aria-hidden="true">C</span>Conductor</h3><p>[Writes the round brief, runs the release and the round report. The only role that pushes.]</p><p class="may">May change: <code>**</code></p><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/conductor/ROLE.md">[Read the role]</a></li>
+<li><h3><span class="badge" aria-hidden="true">D</span>Designer</h3><p>[Reads the live site and proposes numbered changes with mock-ups.]</p><p class="may">May change: <code>team/rounds/N/design/</code></p><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/designer/ROLE.md">[Read the role]</a></li>
+<li><h3><span class="badge" aria-hidden="true">W</span>Writer</h3><p>[Writes the words and the site list, each fact with its source.]</p><p class="may">May change: <code>content/, data/</code></p><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/writer/ROLE.md">[Read the role]</a></li>
+<li><h3><span class="badge" aria-hidden="true">R</span>Reviewer</h3><p>[Passes or rejects each change, then checks the live site.]</p><p class="may">May change: <code>team/rounds/N/review/</code></p><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/reviewer/ROLE.md">[Read the role]</a></li>
+<li><h3><span class="badge" aria-hidden="true">Dv</span>Developer</h3><p>[Builds what passed and runs the checks. Does not push.]</p><p class="may">May change: <code>build/, assets/, scripts/</code></p><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/developer/ROLE.md">[Read the role]</a></li>
+</ul>
+</section>
+<section class="split-2">
+<figure class="fig"><svg viewBox="0 0 340 582" role="img" aria-labelledby="lp-t lp-d">
+<title id="lp-t">One round</title>
+<desc id="lp-d">Eight steps: 1 brief, by the conductor; 2 design proposal, by the designer; 3 review of the design, by the reviewer; 4 copy, by the writer; 5 build, by the developer; 6 release, by the conductor; 7 review of the live site, by the reviewer, and a failure goes back to step 5; 8 round report, by the conductor, then the next round starts at step 1.</desc>
+<defs><marker id="lp-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0 0L10 5L0 10z"/></marker></defs>
+<line class="dg-spine" x1="30" y1="34" x2="30" y2="538"/>
+<circle class="dg-dot" cx="30" cy="34" r="13"/><text class="dg-num" x="30" y="39" text-anchor="middle">1</text><text class="dg-t" x="56" y="32">[Brief]</text><text class="dg-m" x="56" y="50">conductor</text><circle class="dg-dot" cx="30" cy="106" r="13"/><text class="dg-num" x="30" y="111" text-anchor="middle">2</text><text class="dg-t" x="56" y="104">[Design proposal]</text><text class="dg-m" x="56" y="122">designer</text><circle class="dg-dot" cx="30" cy="178" r="13"/><text class="dg-num" x="30" y="183" text-anchor="middle">3</text><text class="dg-t" x="56" y="176">[Review of the design]</text><text class="dg-m" x="56" y="194">reviewer</text><circle class="dg-dot" cx="30" cy="250" r="13"/><text class="dg-num" x="30" y="255" text-anchor="middle">4</text><text class="dg-t" x="56" y="248">[Copy]</text><text class="dg-m" x="56" y="266">writer</text><circle class="dg-dot" cx="30" cy="322" r="13"/><text class="dg-num" x="30" y="327" text-anchor="middle">5</text><text class="dg-t" x="56" y="320">[Build]</text><text class="dg-m" x="56" y="338">developer</text><circle class="dg-dot" cx="30" cy="394" r="13"/><text class="dg-num" x="30" y="399" text-anchor="middle">6</text><text class="dg-t" x="56" y="392">[Release]</text><text class="dg-m" x="56" y="410">conductor</text><circle class="dg-dot" cx="30" cy="466" r="13"/><text class="dg-num" x="30" y="471" text-anchor="middle">7</text><text class="dg-t" x="56" y="464">[Review of the live site]</text><text class="dg-m" x="56" y="482">reviewer</text><circle class="dg-dot" cx="30" cy="538" r="13"/><text class="dg-num" x="30" y="543" text-anchor="middle">8</text><text class="dg-t" x="56" y="536">[Round report]</text><text class="dg-m" x="56" y="554">conductor</text>
+<path class="dg-line" d="M250 466 C 292 466 292 322 254 322" marker-end="url(#lp-a)"/>
+<text class="dg-m" x="276" y="398" text-anchor="end">[fails: back to 5]</text>
+<path class="dg-line" d="M200 538 H 328 V 34 H 256" marker-end="url(#lp-a)"/>
+<text class="dg-m" x="320" y="568" text-anchor="end">[next round]</text>
+</svg><figcaption>[One round, from brief to report.]</figcaption></figure>
+<div class="prose">
+<h2>[How a round runs]</h2>
+<p>[Short paragraph: the conductor briefs, the designer proposes, the reviewer passes or rejects each change, the writer and developer build what passed, and the reviewer checks the live site.]</p>
+<p>[The rules are in the repository:] <a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/blob/dev/team/WORKFLOW.md">[the workflow]</a>.</p>
+</div>
+</section>
+<section class="prose">
+<div class="sec-head"><h2>[Every change, newest first]</h2><a href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commits/dev">[All commits on GitHub]</a></div>
+<p>[One line: built from git log when the site was built; the agent is read from each commit's Agent: trailer.]</p>
+<ol class="timeline">
+<li><h3><time datetime="2026-11-xx">19 November 2026</time></h3><ul><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/6ef5491">[Commit message, first line]</a><p class="meta"><span class="who" title="[full Agent: trailer]">conductor</span><span class="sha">6ef5491</span></p></li><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/c70489b">[Commit message, first line]</a><p class="meta"><span class="who" title="[full Agent: trailer]">conductor</span><span class="sha">c70489b</span></p></li></ul></li><li><h3><time datetime="2026-11-xx">16 November 2026</time></h3><ul><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/c4f487c">[Commit message, first line]</a><p class="meta"><span class="who" title="[full Agent: trailer]">site</span><span class="sha">c4f487c</span></p></li><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/d3173bc">[Commit message, first line, long enough to wrap onto a second line at 390 pixels]</a><p class="meta"><span class="who" title="[full Agent: trailer]">site</span><span class="sha">d3173bc</span></p></li></ul></li><li><h3><time datetime="2026-11-xx">15 November 2026</time></h3><ul><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/0494dd5">[Commit message, first line]</a><p class="meta"><span class="who" title="[full Agent: trailer]">site</span><span class="sha">0494dd5</span></p></li><li class="commit"><a class="msg" href="https://github.com/AgentiCCells/AgentiCCells__Site__Website/commit/0ab67b2">[Commit message, first line]</a><p class="meta"><span class="who none">no Agent: trailer</span><span class="sha">0ab67b2</span></p></li></ul></li>
+</ol>
+</section>
+</main>
+<footer><p>[One line: agenticcells.site is where the sites AgentiCCells cells make are published.] The company: <a href="https://agenticcells.ai">agenticcells.ai</a>.</p><p>Contact: <a href="mailto:contact@example.invalid">[contact address]</a></p><p>Code under Apache-2.0. Text and images under CC BY 4.0.</p><p class="version">Version v0.1.N</p></footer>
+</body>
+</html>

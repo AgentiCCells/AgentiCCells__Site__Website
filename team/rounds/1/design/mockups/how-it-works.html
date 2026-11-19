@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mock-up: How it works</title>
+<!-- Mock-up for team/rounds/1/design/PROPOSAL.md (designer.agenticcells-site, 2026-11-19).
+     Text in [square brackets] is a placeholder: the writer writes the real words. -->
+<link rel="stylesheet" href="../../../../../assets/style.css">
+<link rel="stylesheet" href="proposed.css">
+
+</head>
+<body class="wide">
+<header><a class="brand" href="/"><svg class="mark" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true" focusable="false"><path d="M17 6.5A10.5 10.5 0 1 0 17 25.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" opacity=".45"/><path d="M25 9.5A10.5 10.5 0 1 0 25 22.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><span>AgentiCCells</span></a><nav class="wide" aria-label="Site"><ul><li><a href="/">Home</a></li><li><a href="/how-it-works/" aria-current="page">How it works</a></li><li><a href="/behind-the-scenes/">Behind the scenes</a></li><li><a href="https://hub.agenticcells.site">Hub<span class="ext" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li></ul></nav><details class="menu"><summary>Menu</summary><nav aria-label="Site (menu)"><ul><li><a href="/">Home</a></li><li><a href="/how-it-works/" aria-current="page">How it works</a></li><li><a href="/behind-the-scenes/">Behind the scenes</a></li><li><a href="https://hub.agenticcells.site">Hub<span class="ext" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M3 9L9 3M4.5 3H9v4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li></ul></nav></details></header>
+<main>
+<div class="prose">
+<h1>[How a site gets here]</h1>
+<p class="lead">[Two lines: the site factory turns a request in a pull request into a live site, and then a team builds it. Everything happens in public repositories.]</p>
+</div>
+<section class="split-2">
+<figure class="fig"><svg viewBox="0 0 340 760" role="img" aria-labelledby="fx-t fx-d">
+<title id="fx-t">How a site gets here</title>
+<desc id="fx-d">1, a request file is committed in a pull request to the site factory. 2, the factory comments its plan on the pull request. The pull request is merged. 3, on merge the factory creates, in order, the repository, the DNS record, GitHub Pages and HTTPS. 4, a conductor and a team build the site in rounds. The site is live at its subdomain of agenticcells.site, and can later move to its own domain.</desc>
+<defs><marker id="fx-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="dg-head" d="M0 0L10 5L0 10z"/></marker></defs>
+<line class="dg-spine" x1="20" y1="40" x2="20" y2="650"/>
+<!-- 1 -->
+<circle class="dg-dot" cx="20" cy="40" r="13"/><text class="dg-num" x="20" y="45" text-anchor="middle">1</text>
+<rect class="dg-box" x="44" y="12" width="290" height="88" rx="6"/>
+<text class="dg-m" x="58" y="34">[in a pull request]</text>
+<text class="dg-t" x="58" y="56">[Request]</text>
+<text class="dg-s" x="58" y="76">[site.json and brief.md, in a</text>
+<text class="dg-s" x="58" y="93">folder under requests/]</text>
+<!-- 2 -->
+<circle class="dg-dot" cx="20" cy="150" r="13"/><text class="dg-num" x="20" y="155" text-anchor="middle">2</text>
+<rect class="dg-box" x="44" y="122" width="290" height="88" rx="6"/>
+<text class="dg-m" x="58" y="144">[on the pull request, no secrets]</text>
+<text class="dg-t" x="58" y="166">[Plan]</text>
+<text class="dg-s" x="58" y="186">[the factory comments what it</text>
+<text class="dg-s" x="58" y="203">will create]</text>
+<!-- merge gate -->
+<rect class="dg-key" x="9" y="239" width="22" height="22" rx="3" transform="rotate(45 20 250)"/>
+<text class="dg-t" x="44" y="256">[Merge]</text>
+<text class="dg-m" x="114" y="256">[the request is accepted]</text>
+<!-- 3 -->
+<circle class="dg-dot" cx="20" cy="312" r="13"/><text class="dg-num" x="20" y="317" text-anchor="middle">3</text>
+<rect class="dg-box" x="44" y="284" width="290" height="204" rx="6"/>
+<text class="dg-m" x="58" y="306">[on merge, in this order]</text>
+<text class="dg-t" x="58" y="328">[Apply]</text>
+<rect class="dg-chip" x="58" y="344" width="118" height="44" rx="22"/><text class="dg-c" x="117" y="371" text-anchor="middle">a  Repository</text>
+<rect class="dg-chip" x="204" y="344" width="116" height="44" rx="22"/><text class="dg-c" x="262" y="371" text-anchor="middle">b  DNS</text>
+<rect class="dg-chip" x="58" y="412" width="118" height="44" rx="22"/><text class="dg-c" x="117" y="439" text-anchor="middle">c  Pages</text>
+<rect class="dg-chip" x="204" y="412" width="116" height="44" rx="22"/><text class="dg-c" x="262" y="439" text-anchor="middle">d  HTTPS</text>
+<path class="dg-line" d="M178 366h22" marker-end="url(#fx-a)"/>
+<path class="dg-line" d="M262 389v10H117v9" marker-end="url(#fx-a)"/>
+<path class="dg-line" d="M178 434h22" marker-end="url(#fx-a)"/>
+<text class="dg-m" x="58" y="476">[status.json is written back to the request]</text>
+<!-- 4 -->
+<circle class="dg-dot" cx="20" cy="532" r="13"/><text class="dg-num" x="20" y="537" text-anchor="middle">4</text>
+<rect class="dg-box" x="44" y="504" width="290" height="104" rx="6"/>
+<text class="dg-m" x="58" y="526">[then, for each site]</text>
+<text class="dg-t" x="58" y="548">[Build]</text>
+<text class="dg-s" x="58" y="568">[a conductor and a team of five</text>
+<text class="dg-s" x="58" y="585">roles build the site in rounds]</text>
+<g aria-hidden="true"><circle class="dg-dot" cx="240" cy="544" r="6" opacity="1"/><circle class="dg-dot" cx="258" cy="544" r="6" opacity="0.55"/><circle class="dg-dot" cx="276" cy="544" r="6" opacity="0.55"/><circle class="dg-dot" cx="294" cy="544" r="6" opacity="0.55"/><circle class="dg-dot" cx="312" cy="544" r="6" opacity="0.55"/></g>
+<!-- live -->
+<rect class="dg-fill" x="44" y="630" width="290" height="44" rx="22"/>
+<circle cx="20" cy="652" r="7" class="dg-dot"/>
+<text class="dg-on" x="189" y="657" text-anchor="middle">site-name.agenticcells.site</text>
+<path class="dg-dash" d="M189 676v30"/>
+<rect x="44" y="708" width="290" height="44" rx="22" fill="none" class="dg-dash"/>
+<text class="dg-m" x="189" y="735" text-anchor="middle">[later, if the owner wants: its own domain]</text>
+</svg><figcaption>[The site factory, from request to live site.]</figcaption></figure>
+<div>
+<h2>[The four steps]</h2>
+<ol class="steps">
+<li><strong>[Request.]</strong> [A folder with site.json and brief.md, committed on a branch, opened as a pull request.]</li>
+<li><strong>[Plan.]</strong> [The factory checks the request and comments what it would create. No secrets, no cloud access.]</li>
+<li><strong>[Apply on merge.]</strong> [Repository, DNS record, GitHub Pages, HTTPS. The result is written back as status.json.]</li>
+<li><strong>[Build.]</strong> [A conductor and a team of five roles build the site in rounds. See <a href="/behind-the-scenes/">behind the scenes</a>.]</li>
+</ol>
+<p>[The factory's code and every request are public:] <a href="https://github.com/AgentiCCells/AgentiCCells__Site__Factory">[the site factory's repository]</a>.</p>
+</div>
+</section>
+<section class="prose">
+<h2>[Moving to its own domain]</h2>
+<p>[Short paragraph: what changes when a site moves, and that its subdomain here keeps pointing to it.]</p>
+</section>
+</main>
+<footer><p>[One line: agenticcells.site is where the sites AgentiCCells cells make are published.] The company: <a href="https://agenticcells.ai">agenticcells.ai</a>.</p><p>Contact: <a href="mailto:contact@example.invalid">[contact address]</a></p><p>Code under Apache-2.0. Text and images under CC BY 4.0.</p><p class="version">Version v0.1.N</p></footer>
+</body>
+</html>

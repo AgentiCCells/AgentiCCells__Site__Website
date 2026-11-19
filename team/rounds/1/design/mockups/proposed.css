@@ -1,0 +1,126 @@
+/* Round 1 design proposal (designer.agenticcells-site@AgentiCCells.dinis, 2026-11-19).
+   PROPOSAL, not yet passed by the reviewer. The developer appends what passes to assets/style.css.
+   Uses only the palette, type scale and radius already defined in assets/style.css: no new colours, no fonts,
+   so light and dark both follow the existing prefers-color-scheme block. Section numbers match PROPOSAL.md. */
+
+/* Change 1: a wide layout for the main pages (body class "wide"), with a prose column inside it.
+   Replaces the ".home ..." width rules; the hero no longer needs .home. */
+@media (min-width:48rem){
+  .wide header,.wide main,.wide footer{max-width:62rem}
+}
+.prose{max-width:42rem}
+.lead{font-size:var(--step-1);line-height:1.5;max-width:38rem}
+
+/* Change 2: nav. A link that leaves this site shows a small arrow. */
+.ext svg{width:.7em;height:.7em;margin-left:.3em;flex:none}
+
+/* Change 3: the home hero, two columns on wide screens: words and actions, then the address picture. */
+.hero.split{display:grid;gap:1.75rem;padding:1.25rem 0 2rem}
+.hero.split h1{margin-top:.25rem}
+.hero.split .cta{margin-top:1.5rem}
+.hero.split .button{min-height:2.75rem;display:inline-flex;align-items:center}
+@media (min-width:48rem){
+  .hero.split{grid-template-columns:1.3fr .7fr;align-items:center;padding:2.5rem 2rem;gap:2.5rem}
+}
+.addr-fig{margin:0;display:grid;gap:.4rem;max-width:24rem}
+.addr-fig .step{font-size:.8125rem;font-weight:600;color:var(--muted);margin:0}
+.addr-fig .url{display:flex;align-items:center;gap:.5rem;font:600 .9375rem var(--mono);color:var(--fg);background:var(--bg);
+  border:1px solid var(--line);border-radius:999px;padding:.55rem .9rem;overflow-wrap:anywhere;min-width:0}
+.addr-fig .url::before{content:"";flex:none;width:.6rem;height:.6rem;border-radius:50%;background:var(--accent)}
+.addr-fig .url.later{border-style:dashed;color:var(--muted);font-weight:400}
+.addr-fig .url.later::before{background:transparent;border:2px solid var(--muted)}
+.addr-fig .arrow{display:block;width:1.25rem;height:1.5rem;margin-left:1.1rem;color:var(--accent)}
+.addr-fig figcaption{font-size:.875rem;color:var(--muted);margin-top:.35rem}
+
+/* A section heading with a link at its right (wraps under it on a phone). */
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0 1.25rem;margin-bottom:.25rem}
+.sec-head h2{margin:0}
+.sec-head a{display:inline-flex;align-items:center;min-height:2.75rem}
+
+/* Change 4: the "sites made here" cards. Whole card opens the site; "On the hub" is a second, separate link. */
+.site-grid{list-style:none;padding:0;margin:1rem 0 0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,17.5rem),1fr))}
+.site-grid>li{margin:0}
+.site-card{position:relative;display:flex;flex-direction:column;height:100%;background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden}
+.site-card:hover{border-color:var(--accent)}
+.site-card:focus-within{outline:3px solid var(--accent);outline-offset:2px}
+.site-card .shot{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:top;border-bottom:1px solid var(--line);background:var(--bg)}
+.site-card .body{display:flex;flex-direction:column;gap:.15rem;flex:1;padding:.5rem 1rem .75rem}
+.site-card h3{margin:0;font-size:var(--step-1)}
+.site-card h3 a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--fg);text-decoration:none}
+.site-card h3 a:hover{text-decoration:underline}
+.site-card h3 a:focus-visible{outline:none}
+.site-card h3 a::after{content:"";position:absolute;inset:0}
+.site-card .what{margin:0}
+.site-card .where{margin:.35rem 0 0;font:.8125rem var(--mono);color:var(--accent);overflow-wrap:anywhere}
+.site-card .ver{margin:auto 0 0;padding-top:.5rem;display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .6rem;font-size:.8125rem;color:var(--muted)}
+.site-card .ver .v{font-family:var(--mono);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.05rem .5rem}
+.site-card .hub{position:relative;z-index:1;display:inline-flex;align-items:center;min-height:2.75rem;margin-left:auto;font-size:.875rem}
+
+/* Change 5: "how a site gets here" as a row of steps (a column on a phone). */
+ol.flow-steps{list-style:none;padding:0;margin:1rem 0;counter-reset:fs;display:grid;gap:.75rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr))}
+ol.flow-steps li{counter-increment:fs;margin:0;background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--accent);
+  border-radius:var(--radius);padding:.85rem 1rem 1rem}
+ol.flow-steps li::before{content:counter(fs);display:grid;place-items:center;width:1.75rem;height:1.75rem;border-radius:50%;
+  background:var(--accent);color:var(--on-accent);font-weight:700;font-size:.9rem;margin-bottom:.5rem}
+ol.flow-steps strong{display:block;margin-bottom:.15rem}
+ol.flow-steps p{margin:0;color:var(--muted);font-size:.9375rem}
+
+/* Change 6: the band that sends people to the hub. Accent background; the button turns inside out. */
+.band{display:grid;gap:1rem;align-items:center;background:var(--accent);color:var(--on-accent);border-radius:calc(var(--radius)*2);padding:1.5rem 1.25rem}
+.band h2{margin:0;color:inherit;font-size:var(--step-2)}
+.band p{margin:.35rem 0 0}
+.band .button{background:var(--bg);color:var(--accent);justify-self:start;min-height:2.75rem;display:inline-flex;align-items:center}
+.band .button:focus-visible{outline-color:var(--bg)}
+@media (min-width:48rem){.band{grid-template-columns:1fr auto;padding:2rem 2.25rem}}
+
+/* Change 7: the company line. */
+.company{border-top:1px solid var(--line);padding-top:1.25rem;color:var(--muted)}
+.company a{display:inline-flex;align-items:center;min-height:2.75rem}
+
+/* Change 8 and 9: a diagram beside its explanation on wide screens; diagrams in a framed figure. */
+.split-2{display:grid;gap:1.5rem}
+@media (min-width:56rem){.split-2{grid-template-columns:minmax(0,26rem) minmax(0,1fr);align-items:start;gap:2.5rem}}
+.fig{margin:0;padding:.75rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.fig svg{display:block;width:100%;height:auto;max-width:26rem;margin:0 auto}
+.fig figcaption{font-size:.875rem;color:var(--muted);text-align:center;margin-top:.5rem}
+/* Shared diagram classes: every colour is a palette token, so dark mode follows. */
+.dg-spine{stroke:var(--line);stroke-width:2}
+.dg-line{stroke:var(--accent);stroke-width:2;fill:none}
+.dg-dash{stroke:var(--muted);stroke-width:1.5;stroke-dasharray:5 5;fill:none}
+.dg-head{fill:var(--accent)}
+.dg-box{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.dg-key{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.dg-fill{fill:var(--accent)}
+.dg-dot{fill:var(--accent)}
+.dg-num{fill:var(--on-accent);font:700 14px var(--font)}
+.dg-t{fill:var(--fg);font:700 16px var(--font)}
+.dg-s{fill:var(--fg);font:13.5px var(--font)}
+.dg-m{fill:var(--muted);font:12.5px var(--font)}
+.dg-on{fill:var(--on-accent);font:700 14px var(--mono)}
+.dg-chip{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}
+.dg-c{fill:var(--fg);font:600 13.5px var(--font)}
+
+/* Change 9: the team as cards. */
+.role-grid{list-style:none;padding:0;margin:1rem 0;display:grid;gap:.75rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr))}
+.role-grid>li{margin:0;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1rem}
+.role-grid h3{margin:0 0 .35rem;font-size:var(--step-1);display:flex;align-items:center;gap:.6rem}
+.role-grid h3 .badge{display:grid;place-items:center;flex:none;width:2rem;height:2rem;border-radius:50%;background:var(--accent);color:var(--on-accent);font-size:.875rem}
+.role-grid p{margin:0 0 .5rem}
+.role-grid .may{font-size:.8125rem;color:var(--muted)}
+.role-grid .may code{font-size:.8125rem}
+.role-grid li>a{margin-top:auto;display:inline-flex;align-items:center;min-height:2.75rem;padding:0}
+
+/* Change 10: the commit timeline, built from git log. */
+ol.timeline{list-style:none;margin:1rem 0 0 .5rem;padding:0;border-left:2px solid var(--line)}
+ol.timeline>li{margin:0;padding:0 0 1rem 1.25rem;position:relative}
+ol.timeline>li::before{content:"";position:absolute;left:-.45rem;top:.35rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+ol.timeline h3{margin:0 0 .25rem;font-size:var(--step-0);color:var(--muted);font-weight:600}
+ol.timeline ul{list-style:none;padding:0;margin:0}
+ol.timeline .commit{margin:0 0 .5rem;padding:.25rem 0 .5rem;border-bottom:1px solid var(--line)}
+ol.timeline .commit>a.msg{display:flex;align-items:center;min-height:2.75rem;padding:0;font-weight:600;overflow-wrap:anywhere}
+ol.timeline .meta{display:flex;flex-wrap:wrap;gap:.25rem .75rem;align-items:center;font-size:.8125rem;color:var(--muted)}
+ol.timeline .who{font-family:var(--mono);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.05rem .55rem}
+ol.timeline .who.none{color:var(--muted);border-style:dashed}
+ol.timeline .sha{font-family:var(--mono)}

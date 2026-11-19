@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<title>Mock-up: share card</title>
+<!-- Mock-up for PROPOSAL.md change 11. Shot at exactly 1200x630 to PNG. Fixed light palette (a preview image has no dark mode).
+     Text in [square brackets] is a placeholder for the writer. -->
+<link rel="stylesheet" href="../../../../../assets/style.css">
+<style>
+:root{color-scheme:light;--bg:#ffffff;--surface:#f4f6f6;--fg:#16191d;--muted:#4f5861;--accent:#0a5c6b;--on-accent:#ffffff;--line:#d5dbdf}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--bg)}
+.card{box-sizing:border-box;width:1200px;height:630px;padding:72px 84px 0;display:grid;grid-template-rows:auto 1fr auto;
+  background:linear-gradient(180deg,var(--surface),var(--bg) 70%);border-top:16px solid var(--accent);font-family:var(--font);color:var(--fg)}
+.top{display:flex;align-items:center;gap:28px;color:var(--accent)}
+.top b{font-size:64px;letter-spacing:-.02em;color:var(--fg)}
+.top svg{width:128px;height:128px}
+h1{margin:56px 0 0;font-size:68px;line-height:1.1;letter-spacing:-.025em;max-width:1000px}
+.foot{display:flex;justify-content:space-between;align-items:center;border-top:2px solid var(--line);padding:26px 0 34px;font:600 30px var(--mono);color:var(--accent)}
+.foot span{font:400 26px var(--font);color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="top"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M17 6.5A10.5 10.5 0 1 0 17 25.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" opacity=".45"/><path d="M25 9.5A10.5 10.5 0 1 0 25 22.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg><b>AgentiCCells</b></div>
+<h1>[Where the sites AgentiCCells cells make are published]</h1>
+<div class="foot">agenticcells.site<span>[Every site: hub.agenticcells.site]</span></div>
+</div>
+</body>
+</html>
