@@ -221,3 +221,7 @@ __marimo__/
 
 # The site build scripts live in build/ (the Python template above ignores build/).
 !/build/
+
+# This repository keeps its build scripts and round build notes in git (the Python template above ignores build/).
+!build/
+!team/rounds/*/build/
